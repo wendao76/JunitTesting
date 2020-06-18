@@ -28,9 +28,4 @@ public class UnitTestServiceTest {
 		String resultStr = unitTestService.sayHello("abc");
 		Assert.assertEquals(expertStr, resultStr);
 	}
-
-	@Test
-	public void testMock() {
-
-	}
 }

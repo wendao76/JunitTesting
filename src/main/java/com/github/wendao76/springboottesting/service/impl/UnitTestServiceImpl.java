@@ -1,6 +1,8 @@
 package com.github.wendao76.springboottesting.service.impl;
 
+import com.github.wendao76.springboottesting.mapper.UnitTestMapper;
 import com.github.wendao76.springboottesting.service.UnitTestService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,8 +14,18 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UnitTestServiceImpl implements UnitTestService {
+	@Autowired(required = false)
+	UnitTestMapper unitTestMapper;
+
 	@Override
 	public String sayHello(String inStr) {
+		if (unitTestMapper != null) {
+			if ("a".equals(inStr)) {
+				return "Testing->" + unitTestMapper.getLastStr(inStr);
+			} else {
+				return unitTestMapper.getFirstStr(inStr) + "->Testing";
+			}
+		}
 		return inStr + "->Testing";
 	}
 }
