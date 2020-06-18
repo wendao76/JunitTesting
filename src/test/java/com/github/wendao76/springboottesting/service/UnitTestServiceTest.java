@@ -1,12 +1,14 @@
 package com.github.wendao76.springboottesting.service;
 
+import com.github.houbb.junitperf.core.annotation.JunitPerfConfig;
+import com.github.houbb.junitperf.core.report.impl.ConsoleReporter;
+import com.github.houbb.junitperf.core.report.impl.HtmlReporter;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
 /**
  * 单元测试服务
  *
@@ -22,8 +24,9 @@ public class UnitTestServiceTest {
 	@Autowired
 	UnitTestService unitTestService;
 
+	@JunitPerfConfig(duration = 10000, threads = 50, reporter = {HtmlReporter.class, ConsoleReporter.class})
 	@Test
-	public void testGetTestStr() {
+	public void testGetTestStr() throws InterruptedException {
 		String expertStr = "abc->Testing";
 		String resultStr = unitTestService.sayHello("abc");
 		Assert.assertEquals(expertStr, resultStr);
