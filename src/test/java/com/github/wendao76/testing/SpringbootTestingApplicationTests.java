@@ -1,4 +1,4 @@
-package com.github.wendao76.springboottesting;
+package com.github.wendao76.testing;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

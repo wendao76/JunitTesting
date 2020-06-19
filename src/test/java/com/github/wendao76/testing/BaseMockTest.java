@@ -1,4 +1,4 @@
-package com.github.wendao76.springboottesting;
+package com.github.wendao76.testing;
 
 import org.junit.Before;
 import org.springframework.beans.factory.annotation.Autowired;

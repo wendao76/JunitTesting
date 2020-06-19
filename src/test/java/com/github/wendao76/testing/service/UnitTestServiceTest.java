@@ -1,4 +1,4 @@
-package com.github.wendao76.springboottesting.service;
+package com.github.wendao76.testing.service;
 
 import com.github.houbb.junitperf.core.annotation.JunitPerfConfig;
 import com.github.houbb.junitperf.core.report.impl.ConsoleReporter;

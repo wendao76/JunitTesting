@@ -1,7 +1,7 @@
-package com.github.wendao76.springboottesting.service.impl;
+package com.github.wendao76.testing.service.impl;
 
-import com.github.wendao76.springboottesting.mapper.UnitTestMapper;
-import com.github.wendao76.springboottesting.service.UnitTestService;
+import com.github.wendao76.testing.mapper.UnitTestMapper;
+import com.github.wendao76.testing.service.UnitTestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

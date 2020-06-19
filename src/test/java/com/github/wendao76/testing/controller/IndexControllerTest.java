@@ -1,6 +1,6 @@
-package com.github.wendao76.springboottesting.controller;
+package com.github.wendao76.testing.controller;
 
-import com.github.wendao76.springboottesting.BaseMockTest;
+import com.github.wendao76.testing.BaseMockTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

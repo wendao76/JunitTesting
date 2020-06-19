@@ -1,7 +1,7 @@
-package com.github.wendao76.springboottesting.service;
+package com.github.wendao76.testing.service;
 
-import com.github.wendao76.springboottesting.mapper.UnitTestMapper;
-import com.github.wendao76.springboottesting.service.impl.UnitTestServiceImpl;
+import com.github.wendao76.testing.mapper.UnitTestMapper;
+import com.github.wendao76.testing.service.impl.UnitTestServiceImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

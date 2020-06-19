@@ -1,4 +1,4 @@
-package com.github.wendao76.springboottesting.service;
+package com.github.wendao76.testing.service;
 
 /**
  * @author wendao76

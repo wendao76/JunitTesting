@@ -1,4 +1,4 @@
-package com.github.wendao76.springboottesting.mapper;
+package com.github.wendao76.testing.mapper;
 
 /**
  * @author wendao76

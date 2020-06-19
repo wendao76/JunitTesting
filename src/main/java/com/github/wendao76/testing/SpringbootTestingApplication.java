@@ -1,4 +1,4 @@
-package com.github.wendao76.springboottesting;
+package com.github.wendao76.testing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
